@@ -32,9 +32,20 @@ $(document).ready(function()  {
     let input = $("#inputBox").val();
     input = input.replace(/[^\w\s]/gi,"");
     input = input.replace(/\d/g,"");
-    alert(input);
+    finalInput = input.toLowerCase();
+    alert(finalInput);
+    let stringArray = finalInput.split(""); 
+    let test = stringArray.length-1; 
+    let test2 = stringArray[test];
+    if (stringArray[stringArray.length-1] === "y" && stringArray[stringArray.length-2] === "a" && stringArray[stringArray.length-3] === "w"){
+      let stringArray2 = stringArray.slice(0, stringArray.length-3);
+      alert(stringArray2);
+    }
+    else{
+    }
   });
 });
+
 
 
 //input.replace(/[^\w\s]/gi, '')
@@ -56,9 +67,14 @@ $(document).ready(function()  {
 // Expect(changeCasing("AWAY")).toEqual("away");
 
 // 3. 
-// Describe: changeCasing
-// Test: "Makes all string characters lower case"
-// Expect(changeCasing("AWAY")).toEqual("away");
+// Describe: checkLast
+// Test: "checks if the last three letters of the string are 'way'"
+// Expect(checkLast("AWAY")).toEqual(TRUE);
+
+// 4. 
+// Describe: removeWay
+// Test: "removes the last three letters if they are way"
+// Expect(removeWay("away")).toEqual(a);
 
 /*
 Regex rgx = new Regex("[^a-zA-Z0-9 -]");
