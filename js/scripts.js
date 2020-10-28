@@ -46,7 +46,29 @@ $(document).ready(function()  {
   });
 });
 
+//allowing allow
+/*
+apple = apple[way]
+twitter = 
+  piglatin:  ittertw[ay]
+          a. twitter - if the word were a consonant
+          b. ittert - if the word were a vowel
 
+and = and[way]
+
+1. [ay]
+2. Check the first letter
+3. Run loop based upon first answer e.g. if it's a vowel then run the [way] function, if it's not run the [ay] function.
+
+ittertway  = > twitter 
+
+ittertway = > ittert
+
+
+
+
+1. [ay]
+2. check for constant + way
 
 //input.replace(/[^\w\s]/gi, '')
 
