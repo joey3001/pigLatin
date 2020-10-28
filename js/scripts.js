@@ -30,8 +30,8 @@ $(document).ready(function()  {
     event.preventDefault();
     alert("hi");
     let input = $("#inputBox").val();
-    let input = input.replace(/[^\w\s]/gi,"");
-    input = input.replace(/\d/g, "");
+    input = input.replace(/[^\w\s]/gi,"");
+    input = input.replace(/\d/g,"");
     alert(input);
   });
 });
